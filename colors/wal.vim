@@ -190,6 +190,28 @@ exe 'hi ALEWarningSign guibg=NONE ctermbg=NONE ctermfg=3 guifg='.g:color3
 exe 'hi ALEError guibg=NONE ctermbg=NONE ctermfg=1 guifg='.g:color1
 exe 'hi ALEWarning guibg=NONE ctermbg=NONE ctermfg=3 guifg='.g:color3
 
+exe 'hi BufferTabpages guibg='.g:color0
+exe 'hi BufferTabpageFill guibg='.g:color0
+exe 'hi BufferOffset guibg='.g:color0
+
+exe 'hi BufferCurrent guibg=NONE guifg='.g:color7
+exe 'hi BufferCurrentIndex guibg=NONE guifg='.g:color7
+exe 'hi BufferCurrentMod guibg=NONE guifg='.g:color7
+exe 'hi BufferCurrentSign guibg=NONE guifg='.g:color7
+exe 'hi BufferCurrentTarget guibg=NONE guifg='.g:color7
+
+exe 'hi BufferVisible guibg=NONE guifg='.g:color1
+exe 'hi BufferVisibleIndex guibg=NONE guifg='.g:color1
+exe 'hi BufferVisibleMod guibg=NONE guifg='.g:color1
+exe 'hi BufferVisibleSign guibg=NONE guifg='.g:color1
+exe 'hi BufferVisibleTarget guibg=NONE guifg='.g:color1
+
+exe 'hi BufferInactive guibg=NONE guifg='.g:color1
+exe 'hi BufferInactiveIndex guibg=NONE guifg='.g:color1
+exe 'hi BufferInactiveMod guibg=NONE guifg='.g:color1
+exe 'hi BufferInactiveSign guibg=NONE guifg='.g:color1
+exe 'hi BufferInactiveTarget guibg=NONE guifg='.g:color1
+
 " }}}
 
 " Plugin options {{{
