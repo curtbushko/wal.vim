@@ -50,7 +50,7 @@ exe 'hi helpLeadBlank guibg=NONE ctermbg=NONE ctermfg=7 guifg='.g:color7
 exe 'hi helpNormal guibg=NONE ctermbg=NONE ctermfg=7 guifg='.g:color7
 exe 'hi Visual ctermbg=0 guibg='.g:color0.' ctermfg=15 guifg='.g:color15.' cterm=reverse term=reverse gui=reverse'
 exe 'hi VisualNOS guibg=NONE ctermbg=NONE ctermfg=1 guifg='.g:color1
-exe 'hi Pmenu ctermbg=8 guibg='.g:color8.' ctermfg=7 guifg='.g:color7
+exe 'hi Pmenu ctermbg=0 guibg='.g:color0.' ctermfg=7 guifg='.g:color7
 exe 'hi PmenuSbar ctermbg=6 guibg='.g:color6.' ctermfg=7 guifg='.g:color7
 exe 'hi PmenuSel ctermbg=4 guibg='.g:color4.' ctermfg=0 guifg='.g:color0
 exe 'hi PmenuThumb ctermbg=8 guibg='.g:color8.' ctermfg=8 guifg='.g:color8
