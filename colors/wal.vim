@@ -55,6 +55,9 @@ exe 'hi Type guibg=NONE ctermbg=NONE ctermfg=3 guifg='.g:color3
 exe 'hi Underlined guibg=NONE ctermbg=NONE ctermfg=1 cterm=underline gui=underline guifg='.g:color1
 exe 'hi StatusLine ctermbg=7 guibg='.g:color7.' ctermfg=0  guifg='.g:color0
 exe 'hi StatusLineNC ctermbg=8 guibg='.g:color8.' ctermfg=0 guifg='.g:color0
+exe 'hi StatusLineSeparator guifg='.g:color1
+exe 'hi StatusLineTerm guifg='.g:color1
+exe 'hi StatusLineTermNC guifg='.g:color1
 exe 'hi TabLine guibg=NONE ctermbg=NONE ctermfg=8 guifg='.g:color8
 exe 'hi TabLineFill guibg=NONE ctermbg=NONE ctermfg=8 guifg='.g:color8
 exe 'hi TabLineSel ctermbg=4 guibg='.g:color4.' ctermfg=0 guifg='.g:color0
@@ -212,7 +215,7 @@ exe 'hi BufferTabpages guibg='.g:color0
 exe 'hi BufferTabpageFill guibg='.g:color0
 exe 'hi BufferOffset guibg='.g:color0
 
-exe 'hi BufferCurrent guibg=NONE guifg='.g:color1
+exe 'hi BufferCurrent guibg=NONE guifg='.g:color7
 exe 'hi BufferCurrentIndex guibg=NONE guifg='.g:color1
 exe 'hi BufferCurrentMod guibg=NONE guifg='.g:color3
 exe 'hi BufferCurrentSign guibg=NONE guifg='.g:color4
@@ -336,11 +339,6 @@ exe 'hi NvimTreeGitRenamed guifg='.g:color4
 exe 'hi NvimTreeSymlink guifg='.g:color6
 exe 'hi NvimTreeRootFolder gui=bold guifg='.g:color1
 exe 'hi NvimTreeExecFile guifg='.g:color2
-exe 'hi StatusLine guifg='.g:color1
-exe 'hi StatusLineNC guifg='.g:color1
-exe 'hi StatusLineSeparator guifg='.g:color1
-exe 'hi StatusLineTerm guifg='.g:color1
-exe 'hi StatusLineTermNC guifg='.g:color1
 exe 'hi CodiVirtualText guifg='.g:color11
 exe 'hi IndentBlanklineContextChar guifg='.g:color5
 exe 'hi DashboardHeader guifg='.g:color4
