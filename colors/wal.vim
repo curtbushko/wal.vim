@@ -13,6 +13,24 @@ endif
 " Colorscheme name
 let g:colors_name = 'wal'
 
+" 0 = black
+" 1 = red
+" 2 = green
+" 3 = yellow 
+" 4 = blue 
+" 5 = magenta
+" 6 = cyan
+" 7 = white
+" 8 = bright black
+" 9 = bright red
+" 10 = bright green
+" 11 = bright yellow
+" 12 = bright blue
+" 13 = bright magenta
+" 14 = bright cyan
+" 15 = bright white
+
+
 " highlight groups {{{
 
 " get hex colors for termguicolors
@@ -194,24 +212,157 @@ exe 'hi BufferTabpages guibg='.g:color0
 exe 'hi BufferTabpageFill guibg='.g:color0
 exe 'hi BufferOffset guibg='.g:color0
 
-exe 'hi BufferCurrent guibg=NONE guifg='.g:color7
-exe 'hi BufferCurrentIndex guibg=NONE guifg='.g:color7
-exe 'hi BufferCurrentMod guibg=NONE guifg='.g:color7
-exe 'hi BufferCurrentSign guibg=NONE guifg='.g:color7
-exe 'hi BufferCurrentTarget guibg=NONE guifg='.g:color7
+exe 'hi BufferCurrent guibg=NONE guifg='.g:color1
+exe 'hi BufferCurrentIndex guibg=NONE guifg='.g:color1
+exe 'hi BufferCurrentMod guibg=NONE guifg='.g:color3
+exe 'hi BufferCurrentSign guibg=NONE guifg='.g:color4
+exe 'hi BufferCurrentTarget gui=bold guibg=NONE guifg='.g:color1
 
 exe 'hi BufferVisible guibg=NONE guifg='.g:color1
 exe 'hi BufferVisibleIndex guibg=NONE guifg='.g:color1
-exe 'hi BufferVisibleMod guibg=NONE guifg='.g:color1
-exe 'hi BufferVisibleSign guibg=NONE guifg='.g:color1
-exe 'hi BufferVisibleTarget guibg=NONE guifg='.g:color1
+exe 'hi BufferVisibleMod guibg=NONE guifg='.g:color3
+exe 'hi BufferVisibleSign guibg=NONE guifg='.g:color4
+exe 'hi BufferVisibleTarget gui=bold guibg=NONE guifg='.g:color1
 
 exe 'hi BufferInactive guibg=NONE guifg='.g:color1
 exe 'hi BufferInactiveIndex guibg=NONE guifg='.g:color1
-exe 'hi BufferInactiveMod guibg=NONE guifg='.g:color1
+exe 'hi BufferInactiveMod guibg=NONE guifg='.g:color3
 exe 'hi BufferInactiveSign guibg=NONE guifg='.g:color1
-exe 'hi BufferInactiveTarget guibg=NONE guifg='.g:color1
+exe 'hi BufferInactiveTarget gui=bold guibg=NONE guifg='.g:color1
 
+exe 'hi TSComment guifg='.g:color8
+exe 'hi TSAnnotation guifg='.g:color5
+exe 'hi TSAttribute guifg='.g:color6
+exe 'hi TSConstructor guifg='.g:color5
+exe 'hi TSType guifg='.g:color5
+exe 'hi TSTypeBuiltin guifg='.g:color5
+exe 'hi TSConditional guifg='.g:color4
+exe 'hi TSException guifg='.g:color4
+exe 'hi TSInclude guifg='.g:color4
+exe 'hi TSKeyword guifg='.g:color4
+exe 'hi TSKeywordFunction guifg='.g:color4
+exe 'hi TSLabel guifg='.g:color4
+exe 'hi TSNamespace guifg='.g:color4
+exe 'hi TSRepeat guifg='.g:color4
+exe 'hi TSConstant guifg='.g:color3
+exe 'hi TSConstBuiltin guifg='.g:color3
+exe 'hi TSFloat guifg='.g:color1
+exe 'hi TSNumber guifg='.g:color1
+exe 'hi TSBoolean guifg='.g:color1
+exe 'hi TSCharacter guifg='.g:color10
+exe 'hi TSError guifg='.g:color9
+exe 'hi TSFunction guifg='.g:color3
+exe 'hi TSFuncBuiltin guifg='.g:color3
+exe 'hi TSMethod guifg='.g:color3
+exe 'hi TSConstMacro guifg='g:color6
+exe 'hi TSFuncMacro guifg='g:color6
+exe 'hi TSVariable guifg='.g:color1
+exe 'hi TSVariableBuiltin guifg='.g:color6
+exe 'hi TSProperty guifg='.g:color6
+exe 'hi TSOperator guifg='.g:color12
+exe 'hi TSFild guifg='.g:color1
+exe 'hi TSParameter guifg='.g:color1
+exe 'hi TSParameterReference guifg='.g:color1
+exe 'hi TSSymbol guifg='.g:color1
+exe 'hi TSText guifg='.g:color1
+exe 'hi TSPunctDelimiter guifg='.g:color8
+exe 'hi TSTagDelimiter guifg='.g:color8
+exe 'hi TSPunctBracket guifg='.g:color8
+exe 'hi TSPunctSpecial guifg='.g:color8
+exe 'hi TSString guifg='.g:color2
+exe 'hi TSStringRegex guifg='.g:color10
+exe 'hi TSStringEscape guifg='.g:color10
+exe 'hi TSTag guifg='.g:color4
+exe 'hi TSEmphasis gui=italic' 
+exe 'hi TSUnderline gui=underline'
+exe 'hi TSTitle gui=bold guifg='.g:color4
+exe 'hi TSLiteral guifg='.g:color2
+exe 'hi TSURI gui=underline guifg='.g:color6
+exe 'hi TSKeywordOperator guifg='.g:color4
+exe 'hi TSStructure guifg='.g:color5
+exe 'hi TSStrong guifg='.g:color3
+exe 'hi TSQueryLinterError guifg='.g:color9
+
+exe 'hi WhichKey guifg='.g:color13
+exe 'hi WhichKeySeperator guifg='.g:color2
+exe 'hi WhichKeyGroup guifg='.g:color4
+exe 'hi WhichKeyDesc guifg='.g:color6
+exe 'hi WhichKeyFloat guibg='.g:color0
+
+
+exe 'hi LspDiagnosticsDefaultError guifg='.g:color9
+exe 'hi LspDiagnosticsDefaultWarning guifg='.g:color11
+exe 'hi LspDiagnosticsDefaultInformation guifg='.g:color3
+exe 'hi LspDiagnosticsDefaultHint guifg='.g:color12
+exe 'hi LspDiagnosticsVirtualTextError guifg='.g:color9
+exe 'hi LspDiagnosticsVirtualTextWarning guifg='.g:color11
+exe 'hi LspDiagnosticsVirtualTextInformation guifg='.g:color3
+exe 'hi LspDiagnosticsVirtualTextHint guifg='.g:color12
+exe 'hi LspDiagnosticsFloatingError guifg='.g:color9
+exe 'hi LspDiagnosticsFloatingWarning guifg='.g:color11
+exe 'hi LspDiagnosticsFloatingInformation guifg='.g:color3
+exe 'hi LspDiagnosticsFloatingHint guifg='.g:color12
+exe 'hi LspDiagnosticsSignError guifg='.g:color9
+exe 'hi LspDiagnosticsSignWarning guifg='.g:color11
+exe 'hi LspDiagnosticsSignInformation guifg='.g:color3
+exe 'hi LspDiagnosticsSignHint guifg='.g:color12
+exe 'hi LspDiagnosticsError guifg='.g:color9
+exe 'hi LspDiagnosticsWarning guifg='.g:color11
+exe 'hi LspDiagnosticsInformation guifg='.g:color3
+exe 'hi LspDiagnosticsHint guifg='.g:color12
+exe 'hi LspDiagnosticsUnderlineError guifg='.g:color9
+exe 'hi LspDiagnosticsUnderlineWarning guifg='.g:color11
+exe 'hi LspDiagnosticsUnderlineInformation guifg='.g:color3
+exe 'hi LspDiagnosticsUnderlineHint guifg='.g:color12
+exe 'hi QuickScopePrimary gui=underline guifg='.g:color6
+exe 'hi QuickScopeSecondary gui=underline guifg='.g:color13
+exe 'hi TelescopeSelection guifg='.g:color12
+exe 'hi TelescopeMatching gui=bold guifg='.g:color3
+exe 'hi TelescopeBorder guifg='.g:color6
+exe 'hi NvimTreeFolderIcon guifg='.g:color4
+exe 'hi NvimTreeIndentMarker guifg='.g:color8
+exe 'hi NvimTreeNormal guifg='.g:color8
+exe 'hi NvimTreeVertSplit guifg='.g:color8
+exe 'hi NvimTreeFolderName guifg='.g:color4
+exe 'hi NvimTreeOpenedFolderName gui=italic guifg='.g:color6
+exe 'hi NvimTreeImageFile guifg='.g:color13
+exe 'hi NvimTreeSpecialFile guifg='.g:color9
+exe 'hi NvimTreeGitStaged guifg='.g:color2
+exe 'hi NvimTreeGitNew guifg='.g:color2
+exe 'hi NvimTreeGitDirty guifg='.g:color2
+exe 'hi NvimTreeGitDeleted guifg='.g:color3
+exe 'hi NvimTreeGitMerge guifg='.g:color4
+exe 'hi NvimTreeGitRenamed guifg='.g:color4
+exe 'hi NvimTreeSymlink guifg='.g:color6
+exe 'hi NvimTreeRootFolder gui=bold guifg='.g:color1
+exe 'hi NvimTreeExecFile guifg='.g:color2
+exe 'hi StatusLine guifg='.g:color1
+exe 'hi StatusLineNC guifg='.g:color1
+exe 'hi StatusLineSeparator guifg='.g:color1
+exe 'hi StatusLineTerm guifg='.g:color1
+exe 'hi StatusLineTermNC guifg='.g:color1
+exe 'hi CodiVirtualText guifg='.g:color11
+exe 'hi IndentBlanklineContextChar guifg='.g:color5
+exe 'hi DashboardHeader guifg='.g:color4
+exe 'hi DashboardCenter guifg='.g:color13
+exe 'hi DashboardFooter guifg='.g:color6
+exe 'hi CompeDocumentation guibg='.g:color0
+exe 'hi DiffViewNormal guifg='.g:color8
+exe 'hi DiffviewStatusAdded guifg='.g:color2
+exe 'hi DiffviewStatusModified guifg='.g:color3
+exe 'hi DiffviewStatusRenamed guifg='.g:color4
+exe 'hi DiffviewStatusDeleted guifg='.g:color5
+exe 'hi DiffviewFilePanelInsertion guifg='.g:color2
+exe 'hi DiffviewFilePanelDeletion guifg='.g:color5
+exe 'hi DiffviewVertSplit guibg='.g:color0
+exe 'hi diffAdded guifg='.g:color2
+exe 'hi diffRemoved guifg='.g:color5
+exe 'hi diffFileId gui=bold guifg='.g:color4
+exe 'hi diffFile guifg='.g:color1
+exe 'hi diffNewFile guifg='.g:color2
+exe 'hi diffOldFile guifg='.g:color1
+exe 'hi debugPc guibg='.g:color6
+exe 'hi debugBreakpoint gui=reverse guifg='.g:color1
 " }}}
 
 " Plugin options {{{
