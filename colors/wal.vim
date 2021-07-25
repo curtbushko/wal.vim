@@ -215,19 +215,19 @@ exe 'hi BufferTabpages guibg='.g:color0
 exe 'hi BufferTabpageFill guibg='.g:color0
 exe 'hi BufferOffset guibg='.g:color0
 
-exe 'hi BufferCurrent guibg=NONE guifg='.g:color7
+exe 'hi BufferCurrent guibg=NONE guifg='.g:color1
 exe 'hi BufferCurrentIndex guibg=NONE guifg='.g:color1
 exe 'hi BufferCurrentMod guibg=NONE guifg='.g:color3
 exe 'hi BufferCurrentSign guibg=NONE guifg='.g:color4
 exe 'hi BufferCurrentTarget gui=bold guibg=NONE guifg='.g:color1
 
-exe 'hi BufferVisible guibg=NONE guifg='.g:color1
+exe 'hi BufferVisible guibg=NONE guifg='.g:color8
 exe 'hi BufferVisibleIndex guibg=NONE guifg='.g:color1
 exe 'hi BufferVisibleMod guibg=NONE guifg='.g:color3
 exe 'hi BufferVisibleSign guibg=NONE guifg='.g:color4
 exe 'hi BufferVisibleTarget gui=bold guibg=NONE guifg='.g:color1
 
-exe 'hi BufferInactive guibg=NONE guifg='.g:color1
+exe 'hi BufferInactive guibg=NONE guifg='.g:color8
 exe 'hi BufferInactiveIndex guibg=NONE guifg='.g:color1
 exe 'hi BufferInactiveMod guibg=NONE guifg='.g:color3
 exe 'hi BufferInactiveSign guibg=NONE guifg='.g:color1
