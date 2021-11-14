@@ -1,5 +1,5 @@
 " wal.vim -- Vim color scheme.
-" Author:       Dylan Araps
+" Author:       Original Author - Dylan Araps, Forked by Curt Bushko
 " Webpage:      https://github.com/dylanaraps/wal
 " Description:  A colorscheme that uses your terminal colors, made to work with 'wal'.
 
@@ -64,7 +64,7 @@ exe 'hi TabLineSel ctermbg=4 guibg='.g:color4.' ctermfg=0 guifg='.g:color0
 exe 'hi TermCursorNC ctermbg=3 guibg='.g:color3.' ctermfg=0 guifg='.g:color0
 exe 'hi VertSplit ctermbg=8 guibg='.g:color8.' ctermfg=0 guifg='.g:color0
 exe 'hi Title guibg=NONE ctermbg=NONE ctermfg=4 guifg='.g:color4
-exe 'hi CursorLine ctermbg=2 guibg='.g:color2.' ctermfg=0 guifg='.g:color0
+exe 'hi CursorLine ctermbg=1 guibg='.g:color1.' ctermfg=0 guifg='.g:color0
 exe 'hi LineNr guibg=NONE ctermbg=NONE ctermfg=8 guifg='.g:color8
 exe 'hi CursorLineNr guibg=NONE ctermbg=NONE ctermfg=8 guifg='.g:color8
 exe 'hi helpLeadBlank guibg=NONE ctermbg=NONE ctermfg=7 guifg='.g:color7
